@@ -15,8 +15,8 @@ abstract class CameraViewViewModel extends State<CameraView> {
       ResolutionPreset.max,
     );
     await controller?.initialize();
-    controller!.lockCaptureOrientation(DeviceOrientation.landscapeRight);
-    controller!.setFocusMode(FocusMode.locked);
+    controller?.lockCaptureOrientation(DeviceOrientation.landscapeRight);
+    controller?.setFocusMode(FocusMode.locked);
     setState(() {});
   }
 }
